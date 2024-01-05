@@ -1,0 +1,41 @@
+package University ;
+public class Course{
+String course;
+String instructor;
+int enrolledStudent;
+
+@Override
+ public String toString(){
+    return "Course name:"+ course +",Instructor:"+ instructor+"Student num:"+enrolledStudent;
+ }
+Course(String courseName, String instructorName, int numberOfStudentEnrolled){
+course = courseName;
+instructor = instructorName;
+enrolledStudent = numberOfStudentEnrolled;
+
+}
+public String getCourse(){
+    return course;
+}
+public void setCourse(String newCourse){
+    course = newCourse;
+}
+public String getInstructor (){
+    return instructor;
+}
+public void setInstructor(String newInstructor){
+    instructor = newInstructor;
+}
+public int getEnrolledStudent(){
+    return enrolledStudent;
+}
+public void setEnrolledStudent(int newEnrolledStudent){
+    enrolledStudent = newEnrolledStudent;
+}
+public static void main(String[] args)throws Exception{
+    Course java = new Course("Java", "Fatma", 23);
+
+System.out.println(java.toString());
+
+}
+}
